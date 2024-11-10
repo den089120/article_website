@@ -1,4 +1,4 @@
-@import "reset.css";
+@import "@/app/styles/reset.css";
 @import "./themes/dark.css";
 @import "./themes/normal.css";
 @import "./variables/global.css";
