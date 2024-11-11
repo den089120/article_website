@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    Main
+    {{$t('main')}}
   </div>
 </template>
 

@@ -4,8 +4,8 @@
 import type {ColorsIcon} from "./ColorsIcon";
 
 defineProps<{
-  width:String,
-  height: String,
+  width:string,
+  height: string,
   iconColor: ColorsIcon
 }>()
 </script>
