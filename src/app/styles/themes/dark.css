@@ -1,9 +1,17 @@
 .app.dark {
-    --bg-color: #0707c6;
-    --inverted-bg-color: #ededf1;
+    --inverted-bg-color: #e8e8ea;
 
-    --primary-color: #1aa821;
-    --secondary-color: #61f369;
-    --inverted-primary-color: #043398;
-    --inverted-secondary-color: #286afc;
+    --primary-color: #04ff04;
+    --secondary-color: #049604;
+    --inverted-primary-color: #041c65;
+    --inverted-secondary-color: #0251fc;
+
+    --inverted-primary-color-readonly: #02113f;
+
+    --skeleton-shadow: #2b2be8;
+    --skeleton-color: #1515ad;
+
+    --code-bg: #1414a2;
+
+    --card-bg: #131398;
 }

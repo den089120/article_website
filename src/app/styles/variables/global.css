@@ -13,8 +13,15 @@
     --font-line-xl: 40px;
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
+    /*size*/
+
     --navbar-height: 50px;
 
     --sidebar-width: 300px;
-    --sidebar-width-collapsed: 80px;
+    --sidebar-width-collapsed: 100px;
+
+    /*colors*/
+
+    --red-light: #fd2525;
+    --red-dark: #861515;
 }

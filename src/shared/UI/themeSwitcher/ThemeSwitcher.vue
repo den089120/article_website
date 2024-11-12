@@ -19,7 +19,7 @@ function changeTheme () {
 </script>
 
 <template>
-  <AppButton :btn-style="ButtonStyle.CLEAR" @click="changeTheme">
+  <AppButton :btn-style="ButtonStyle.CLEAR" @click="changeTheme" :disabled-is="false">
     <IconTemplate width="40px" :icon-color="ColorsIcon.BG_COLOR" height="40px">
       <IconThemeNormal v-if="globalStore.theme === themeName.NORMAL"/>
       <IconThemeDark v-else/>

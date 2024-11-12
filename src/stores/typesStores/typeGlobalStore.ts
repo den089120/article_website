@@ -15,7 +15,9 @@ export interface TypeGlobalStore {
   theme: Ref<themeName, themeName>;
   langApp: Ref<langName, langName>;
   collapsedSideBar: Ref<boolean, boolean>;
+  isModal : Ref<boolean, boolean>;
   changeCollapsed: () => void;
   changeTheme: (themeNew: themeName) => void;
   changeLang: (langNew: langName) => void;
+  changeIsModal: (newValue: boolean) => void;
 }

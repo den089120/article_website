@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import {useGlobalStore} from "@/stores/globalStore";
-import AppButton from "@/shared/UI/button/AppButton.vue";
-import {ButtonStyle} from "@/shared/UI/button/typeButton";
 import ThemeSwitcher from "@/shared/UI/themeSwitcher/ThemeSwitcher.vue";
 import LangSwitcher from "@/shared/UI/langSwitcher/LangSwitcher.vue";
+import SidebarSwitcher from "@/shared/UI/sidebarSwitcher/SidebarSwitcher.vue";
 
 const globalStore = useGlobalStore();
 
@@ -11,15 +10,10 @@ const globalStore = useGlobalStore();
 
 <template>
   <div class="side_bar_app" :class="{ side_bar_app_collapsed: globalStore.collapsedSideBar }">
-    <AppButton
-      :btn-style="ButtonStyle.CLEAR"
-      @click="globalStore.changeCollapsed"
-    >
-      toggle
-    </AppButton>
     <div class="switchers">
       <ThemeSwitcher/>
       <LangSwitcher/>
+      <SidebarSwitcher/>
     </div>
   </div>
 

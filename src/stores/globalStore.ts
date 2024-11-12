@@ -9,6 +9,7 @@ export const useGlobalStore = defineStore('global', (): TypeGlobalStore => {
   const theme = ref<themeName>(localStorage.getItem(LOCALE_STORAGE_THEME) as themeName || themeName.NORMAL)
   const collapsedSideBar = ref<boolean>(false)
   const langApp = ref<langName>(langName.RU)
+  const isModal = ref<boolean>(false)
 
   function changeCollapsed () {
     collapsedSideBar.value = !collapsedSideBar.value
@@ -21,6 +22,9 @@ export const useGlobalStore = defineStore('global', (): TypeGlobalStore => {
     langApp.value = langNew
     i18n.global.locale = langNew
   }
+  function changeIsModal (newValue: boolean) {
+    isModal.value = newValue
+  }
 
-  return { theme, collapsedSideBar, langApp, changeTheme, changeCollapsed, changeLang }
+  return { theme, collapsedSideBar, langApp, isModal, changeTheme, changeCollapsed, changeLang, changeIsModal }
 })
